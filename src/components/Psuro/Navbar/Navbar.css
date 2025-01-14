@@ -1,0 +1,108 @@
+.navbar {
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    height: 60px; /* Fixed height */
+    display: flex;
+    align-items: center; /* Vertically center content */
+}
+/*
+.navbar-title {
+    color: white;
+    border-bottom: 2px solid white;
+    background-color: #333;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0;
+    cursor: pointer;
+}*/
+.navbar-title {
+    color: white;
+    background-color: #333;
+    padding: 10px; /* Same as .active */
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0;
+    cursor: pointer;
+    border-bottom: 2px solid white; /* Optional: remove if not needed */
+    font-weight: bold; /* Same as .active */
+    font-size: 12px; /* Same as .active */
+}
+
+.navbar-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Adjusted margin to fit within the 60px height */
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+    flex: 1; /* Make the links section take remaining space */
+}
+
+.navbar-links li {
+    margin: 0;
+}
+
+
+
+
+
+.navbar-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+/*
+.navbar-links a.active {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+*/
+.navbar-links a.active {
+    background-color: #333; /* Ensure this matches .navbar-title background color */
+    padding: 10px; /* Same as .navbar-title */
+    border-radius: 5px; /* Same as .navbar-title */
+    color: white; /* Same as .navbar-title */
+    font-weight: bold; /* Same as .navbar-title */
+    font-size: 12px; /* Same as .navbar-title */
+}
+
+
+.navbar-links input {
+    border-radius: 25px;
+    height: 40px;
+    margin-top: 10px;
+    width: 500px; /* Adjust as needed */
+    box-sizing: border-box;
+}
+
+
+
+.search-container {
+    position: relative;
+}
+
+.search-container input {
+    border-radius: 25px;
+    
+    padding-left: 40px; /* Space for the icon */
+    box-sizing: border-box;
+}
+
+.search-icon {
+    position: absolute;
+    top: 60%;
+    left: 10px; /* Adjust position as needed */
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    color: black; /* Icon color */
+    font-size: 14px; /* Icon size */
+    cursor: pointer;
+    align-items: center;
+}

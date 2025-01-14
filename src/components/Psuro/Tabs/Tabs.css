@@ -1,0 +1,20 @@
+.portfolio-nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.portfolio-nav button {
+    background-color: transparent;
+    border: none;
+    color: #00FFFF;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.portfolio-nav button.active,
+.portfolio-nav button:hover {
+    background-color: #333;
+    border-radius: 5px;
+}

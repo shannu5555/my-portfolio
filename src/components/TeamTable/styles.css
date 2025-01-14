@@ -1,0 +1,68 @@
+body{
+    background-color: black;
+}
+
+.app-container {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+  }
+  
+  .player-form {
+    margin-bottom: 20px;
+  }
+  
+  .player-form input,
+  .player-form select {
+    margin-right: 10px;
+    padding: 5px;
+  }
+  
+  .tables-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+    color: white;
+  }
+  
+  .team-table {
+    margin: 10px;
+  }
+  
+  table {
+    width: 200px;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid white;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+
+.table-red {
+    border: 2px solid #FF0000; /* Red color */
+    color: red;
+  }
+  
+  .table-blue {
+    border: 2px solid #0000FF; /* Blue color */
+    color: blue;
+  }
+  
+  .table-yellow {
+    border: 2px solid #e8e814; /* Red color */
+    color: yellow;
+  }
+  
+  .table-black {
+    border: 2px solid white; /* Blue color */
+    color: grey;
+  }
+  

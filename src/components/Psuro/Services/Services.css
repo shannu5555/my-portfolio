@@ -1,0 +1,25 @@
+body{
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.services-div p{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 70px;
+    margin-right: 70px;
+    line-height: 25px;
+}
+
+.services-div h1{
+    color:#ccc;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 150px;
+}
+

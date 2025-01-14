@@ -1,0 +1,484 @@
+import BannerCardItem from './components/BannerCardItem/index'
+const bannerCardsData = [
+  {
+    id: 1,
+    headerText: 'The Seasons Latest',
+    description: 'Get the seasons all latest designs in a flick of your hand',
+    className: 'card-1',
+  },
+  {
+    id: 2,
+    headerText: 'Our New Designs',
+    description:
+      'Get the designs developed by our in-house team all for yourself',
+    className: 'card-2',
+  },
+  {
+    id: 3,
+    headerText: 'Insiders',
+    description: 'Get the top class products for yourself with an extra off',
+    className: 'card-3',
+  },
+]
+
+const App = () => (
+  <div className="app-container">
+    <div className="reusable-banners-container">
+      {bannerCardsData.map(eachBanner => (
+        <BannerCardItem bannerCardData={eachBanner} key={eachBanner.id} />
+      ))}
+    </div>
+  </div>
+)
+======================================================================
+import Card from './components/Card'
+const cardsData = [
+  {
+    id: '1',
+    title: 'Data Scientist',
+    description:
+      'Data scientists gather and analyze large sets of structured and unstructured data',
+    imgUrl: 'https://assets.ccbp.in/frontend/react-js/data-scientist-img.png',
+    className: 'card-1',
+  },
+  {
+    id: '2',
+    title: 'IOT Developer',
+    description:
+      'IoT Developers are professionals who can develop, manage, and monitor IoT devices.',
+    imgUrl: 'https://assets.ccbp.in/frontend/react-js/iot-developer-img.png',
+    className: 'card-2',
+  },
+  {
+    id: '3',
+    title: 'VR Developer',
+    description:
+      'A VR developer creates completely new digital environments that people can see.',
+    imgUrl: 'https://assets.ccbp.in/frontend/react-js/vr-developer-img.png',
+    className: 'card-3',
+  },
+  {
+    id: '4',
+    title: 'ML Engineer',
+    description:
+      'Machine learning engineers feed data into models defined by data scientists.',
+    imgUrl: 'https://assets.ccbp.in/frontend/react-js/ml-engineer-img.png',
+    className: 'card-4',
+  },
+]
+
+const App = () => (
+  <div className="cards-app-container">
+    <div className="cards-list-container">
+      <h1 className="heading">Learn 4.0 Technologies</h1>
+      <p className="description">
+        Get trained by alumni of IITs and top companies like Amazon, Microsoft,
+        Intel, Nvidia, Qualcomm, etc. Learn directly from professionals involved
+        in Product Development.
+      </p>
+      <div className="cards-container">
+        {cardsData.map(cardData => (
+          <Card cardData={cardData} key={cardData.id} />
+        ))}
+      </div>
+    </div>
+  </div>
+)
+
+export default App
+=======================================================
+import Welcome from './components/Welcome'
+
+
+
+const App = () => {
+  return <Welcome name="sagir"/>
+}
+
+export default App
+=======================================================
+import Counter from './components/Counter'
+
+
+const App = () => {
+  return <Counter/>
+}
+
+export default App
+=====================================================================
+import Speedometer from './components/Speedometer'
+
+
+const App = () => {
+  return <Speedometer />
+}
+
+export default App
+=============================================
+
+import './App.css'
+import Feedback from "./components/Feedback"
+
+export const feedbackData = {
+  emojis: [
+    {
+      id: 0,
+      name: 'Sad',
+      imageUrl: 'https://assets.ccbp.in/frontend/react-js/sad-emoji-img.png',
+    },
+    {
+      id: 1,
+      name: 'None',
+      imageUrl: 'https://assets.ccbp.in/frontend/react-js/none-emoji-img.png',
+    },
+    {
+      id: 2,
+      name: 'Happy',
+      imageUrl: 'https://assets.ccbp.in/frontend/react-js/happy-emoji-img.png',
+    },
+  ],
+  loveEmojiUrl: 'https://assets.ccbp.in/frontend/react-js/love-emoji-img.png',
+}
+
+const App = () => {
+  return <Feedback feedbackData={feedbackData} />
+}
+
+export default App
+====================================================================
+import './App.css'
+import Gallery from './components/GalleryApp/Gallery'
+
+
+
+const App = () => {
+  return <Gallery />
+}
+
+export default App
+===================================================
+Appstore
+import './App.css'
+import AppStore from './components/AppStore/AppStore'
+
+
+
+const App = () => {
+  return <AppStore />
+}
+
+export default App
+====================================================
+AppsWebStore
+
+import './App.css'
+import AppsWebStore from './components/AppsWebStore/AppswebStore'
+
+
+const App = () => {
+  return <AppsWebStore />
+}
+
+export default App
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cards-app-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4faff;
+  min-height: 100vh;
+}
+
+.cards-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 48px;
+  margin: 10px;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .cards-list-container {
+    margin-top: 96px;
+  }
+}
+
+.heading {
+  text-align: center;
+  color: #171f46;
+  font-family: 'Roboto';
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.description {
+  text-align: center;
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 18px;
+  margin-top: 24px;
+  max-width: 625px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  max-width: 1100px;
+}
+
+@media screen and (min-width: 768px) {
+  .cards-container {
+    flex-direction: row;
+  }
+}
+
+===========================================
+
+public/index.js
+
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
+
+=======================================================================
+psuro app.js
+
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
+
+import Navbar from './components/Psuro/Navbar/Navbar';
+import Projects from './components/Psuro/Projects/Projects';
+//import About from './components/Psuro/About/About';
+//import Blog from './components/Psuro/Blog/Blog';
+import Contact from './components/Psuro/Contact/Contact';
+import Services from './components/Psuro/Services/Services';
+
+import Slider from './components/Psuro/Slider/Slider';
+import Education from './components/Psuro/Education/Education';
+
+
+const App = () => {
+  return (
+    <Router>
+      <div className="containerr">
+        <Navbar />
+        <div className="main-content">
+          <Routes>
+            <Route path="/portfolio" element={<Projects />} />
+            <Route path="/about" element={<Education />} />
+             <Route path="/services" element={<Services />} />
+            <Route path="/blog" element={<Slider/>} />
+            <Route path="/contact" element={<Contact />} />
+            
+            {}
+          </Routes>
+          
+
+        </div>
+        
+        <div>
+          <h1 >Unchangeble</h1>
+        </div>
+      </div>
+    </Router>
+  );
+};
+
+export default App;
+==============================================================
+
+teamtable       app.js
+
+import React, { useState } from "react";
+import { v4 as uuidv4 } from 'uuid'; // Import for generating unique IDs
+ 
+import TeamTable from "./components/TeamTable/TeamTable";// Import TeamTable component
+
+import './components/TeamTable/styles.css'
+
+const App = () => {
+  const [players, setPlayers] = useState([]);
+  const [playerName, setPlayerName] = useState("");
+  const [team, setTeam] = useState("red");
+  const [position, setPosition] = useState(1);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Create a new player object with unique ID
+    const newPlayer = {
+      id: uuidv4(),
+      name: playerName,
+      team: team,
+      position: position,
+    };
+
+    // Update the player list
+    setPlayers([...players, newPlayer]);
+
+    // Reset the form
+    setPlayerName("");
+    setPosition(1);
+    setTeam("red");
+  };
+
+  // Filter players by team
+  const getTeamPlayers = (teamName) => {
+    return players.filter(player => player.team === teamName);
+  };
+
+  return (
+    <div className="app-container">
+      <h1>Team Management</h1>
+
+      {/* Player Input Form */}
+      <form onSubmit={handleSubmit} className="player-form">
+        <input
+          type="text"
+          value={playerName}
+          placeholder="Enter Player Name"
+          onChange={(e) => setPlayerName(e.target.value)}
+          required
+        />
+        <select value={team} onChange={(e) => setTeam(e.target.value)}>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="yellow">Yellow</option>
+          <option value="black">Black</option>
+        </select>
+        <select value={position} onChange={(e) => setPosition(Number(e.target.value))}>
+          {[...Array(15).keys()].map((i) => (
+            <option key={i + 1} value={i + 1}>
+              {i + 1}
+            </option>
+          ))}
+        </select>
+        <button type="submit">Add Player</button>
+      </form>
+
+      {/* Team Tables */}
+      <div className="tables-container">
+        <TeamTable teamName="Red" players={getTeamPlayers("red")}   teamColor="red" />
+        <TeamTable teamName="Blue" players={getTeamPlayers("blue")}  teamColor="blue"  />
+        <TeamTable teamName="Yellow" players={getTeamPlayers("yellow")}  teamColor="yellow" />
+        <TeamTable teamName="Black" players={getTeamPlayers("black")}  teamColor="black" />
+      </div>
+    </div>
+  );
+};
+
+export default App;
+======================================================================================
+psuro
+
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
+
+import Navbar from './components/Psuro/Navbar/Navbar';
+import Projects from './components/Psuro/Projects/Projects';
+//import About from './components/Psuro/About/About';
+//import Blog from './components/Psuro/Blog/Blog';
+import Contact from './components/Psuro/Contact/Contact';
+import Services from './components/Psuro/Services/Services';
+
+import Slider from './components/Psuro/Slider/Slider';
+import Education from './components/Psuro/Education/Education';
+import './App.css'
+import Home from './components/Psuro/Home/Home';
+import Footer from './components/Psuro/Footer/Footer';
+
+
+
+const App = () => {
+  return (
+    <Router>
+      <div className="appss">
+      
+       <Navbar   />
+        <div className="main-content">
+          <Routes>
+              <Route path="/" element={<Home />} />
+            <Route path="/portfolio" element={<Projects />} />
+            <Route path="/about" element={<Education />} />
+             <Route path="/services" element={<Services />} />
+            <Route path="/blog" element={<Slider/>} />
+            <Route path="/contact" element={<Contact />} />
+            {}
+          </Routes>
+          
+
+        </div>
+        
+        <div className='bodyy'>
+          {/*<h1 >Unchangeble</h1>*/}
+          <Footer/>
+        </div>
+      </div>
+    </Router>
+  );
+};
+
+export default App;
+=========================================

@@ -1,0 +1,120 @@
+
+
+.portfolio-nav {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 20px;
+   /* background-color: rgb(28, 23, 23);*/
+    
+}
+
+.portfolio-nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    width: 120px !important;
+    color: white;
+    font-weight: bold;
+    
+    
+}
+
+.portfolio-nav button.active,
+.portfolio-nav button:hover {
+    background-color: #ccc;
+    border-radius: 5px;
+    color: #1a232b;
+    font-weight: bold;
+}
+/*
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: yellow;
+}
+*/
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    width: 100%; /* Ensure it takes the full width of its parent */
+    box-sizing: border-box;
+    padding: 20px; /* Optional: add padding to ensure content doesn’t touch edges */
+}
+
+
+.project {
+    position: relative;
+    width: 200px;
+    height: 180px;
+    box-shadow: 5px 5px 5px black, -3px -3px 5px rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.project img {
+    height: 120px;
+    width: 180px;
+    border-radius: 5px;
+}
+
+.project p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 0 0 10px 10px;
+    background: rgba(0, 0, 0, 0.301);
+    color: black;
+    font-weight: bold;
+    z-index: -1;
+    transition: 0.5s 0s ease-in-out;
+    background: white;
+}
+
+.project:hover img {
+    transform: translateY(-10px) rotateX(10deg);
+    transition-delay: 0.5s;
+}
+
+.project p:first-child {
+    color: red;
+}
+
+.project p:hover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 0 0 10px 10px;
+    background: rgba(0, 0, 0, 0.301);
+    color: #ccc;
+    z-index: -1;
+    transition: 0.5s 0s ease-in-out;
+}

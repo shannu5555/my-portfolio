@@ -1,0 +1,33 @@
+/* src/components/ThemeToggle.css */
+
+/* Default (light mode) styles */
+body {
+    background-color: white; /* Light mode background color */
+   color: black;
+   top: 500%;/* Light mode text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme changes */
+  }
+  
+  /* Dark mode styles */
+  body.dark-mode {
+    background-color: black; /* Dark mode background color */
+    color: #b62525; /* Dark mode text color */
+  }
+  
+  /* Icon styles */
+  .theme-toggle-icon {
+    cursor: pointer;
+    font-size: 24px; /* Adjust size as needed */
+    /* Default icon color */
+  }
+  
+  /* Hover state for the icon */
+  .theme-toggle-icon:hover {
+    color: #0056b3; /* Change color on hover */
+  }
+  .theme-toggle-icon a {
+    cursor: pointer;
+    font-size: 24px; /* Adjust size as needed */
+     /* Default icon color */
+  }
+  

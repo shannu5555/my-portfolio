@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(69, 61, 61) ;
+  background-color:  #1a232b!important;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.apps{
+ background-color: red;
+ height: 100%;
+}
+.container {
+  display: flex;
+  width: 100%; /* Ensure container takes full width */
+  height: 100vh; /* Optional: Ensure container takes full height */
+  height: 100vh; /* Adjust as needed */
+  overflow: hidden; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main-content {
+  flex: 1; /* Allow main-content to take remaining space */
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Ensure content stacks vertically */
+  flex-direction: column; /* Ensure content stacks vertically */
+  overflow: hidden;
+  height: 100%;
+  
+}
+
+.navbar {
+  background-color: #f7e5e5;
+  
+  padding: 20px;
+  box-sizing: border-box;
+  
+}
+
+.navbar-title {
+  color: #00FFFF;
+  border-bottom: 2px solid #00FFFF;
+  display: inline-block;
+  margin: 0;
+}
+
+.navbar-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-links li {
+  margin: 0;
+}
+
+.navbar-links a {
+  color: #00FFFF;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-links a.active {
+  background-color: #333;
+  
+  padding: 10px;
+  display: block;
+  border-radius: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .main-content {
+    width: 100%;
+  }
+  .navbar {
+    padding: 10px;
+  }
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-links a {
+    font-size: 16px;
   }
 }
+
+h1 {
+  color: aqua;
+}
+
+.navb{
+  height: 60px;
+}
+
+

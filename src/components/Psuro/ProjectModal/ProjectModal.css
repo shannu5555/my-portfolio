@@ -1,0 +1,75 @@
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.project-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 700px;
+    width: 90%;
+    overflow: hidden; /* Prevent overflow */
+    background-color:  #1a232b!important;
+    color: white;
+    
+
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    margin: auto;
+    margin-left: 10px !important;
+}
+.modal-content h2{
+    margin-bottom: 0px !important;
+}
+.modal-content p{
+    padding: 0px !important;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+    font-weight: bold;
+    font-size: 10px;
+}
+.modal-content p2{
+    padding: 10px !important;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+    
+    overflow-wrap: break-word !important; 
+    width: 100%; /* Take full width */
+    padding-left: 0px !important; /* Ensure no padding that affects alignment */
+    
+    
+}
+
+.modal-image {
+    width: 100%;
+    height: 200px;
+}
+
+.description {
+    max-height: 150px; /* Limit height for scrolling */
+    overflow-y: auto; /* Add scrollbar for lengthy descriptions */
+    margin: 10px 0;
+    color: #ccc;
+}
+
+.visit-site-button {
+    background-color: yellow;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}

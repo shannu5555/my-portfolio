@@ -1,0 +1,35 @@
+
+.sidebar {
+    width: 20%;
+    
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar h1 {
+    color: #00FFFF;
+    border-bottom: 2px solid #00FFFF;
+    display: inline-block;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+    color: #00FFFF;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar nav ul li a.active {
+    background-color: #333;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+}
