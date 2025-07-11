@@ -88,10 +88,10 @@ const appsList = [
   },
   {
     appId: 8,
-    appName: 'IPL Auction',
+    appName: '8 team',
     imageUrl: 'https://res.cloudinary.com/dth5uiebz/image/upload/v1725905723/Portfolioly_2_opypda.png',
     category: 'sagir',
-    url: 'https://res.cloudinary.com/dth5uiebz/image/upload/v1725905723/Portfolioly_2_opypda.png',
+    url: 'https://ivory-garnet-10.tiiny.site/',
     date: '2024-01-01',
     description: 'This app helps you track your expenses efficiently.',
   },
